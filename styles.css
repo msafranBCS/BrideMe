@@ -774,3 +774,9 @@ html {
     }
 }
 
+.map-embed iframe {
+  width: 1000px;
+  border: 0;
+  border-radius: 18px;
+  height: 120px;
+}
