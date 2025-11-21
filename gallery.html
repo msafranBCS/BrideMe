@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - BrideMe</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-name">BrideMe</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Book Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title mb-3">Our Gallery</h1>
+                    <p class="page-subtitle">Explore our stunning collection of wedding dresses and accessories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-buttons text-center">
+                        <button class="btn btn-filter active" data-filter="all">All</button>
+                        <button class="btn btn-filter" data-filter="classic">Classic</button>
+                        <button class="btn btn-filter" data-filter="modern">Modern</button>
+                        <button class="btn btn-filter" data-filter="vintage">Vintage</button>
+                        <button class="btn btn-filter" data-filter="luxury">Luxury</button>
+                        <button class="btn btn-filter" data-filter="accessories">Accessories</button>
+                        <button class="btn btn-filter" data-filter="veils">Veils</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="gallery-grid">
+                <!-- Classic Collection -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="classic">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=800&fit=crop" alt="Classic Wedding Dress 1" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Classic Elegance</h5>
+                            <p class="text-muted mb-0">Timeless A-line silhouette</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="classic">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=600&h=800&fit=crop" alt="Classic Wedding Dress 2" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Ball Gown Beauty</h5>
+                            <p class="text-muted mb-0">Traditional princess style</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="classic">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=800&fit=crop" alt="Classic Wedding Dress 3" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Sophisticated Grace</h5>
+                            <p class="text-muted mb-0">Elegant long-sleeved design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modern Collection -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="modern">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=800&fit=crop" alt="Modern Wedding Dress 1" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Minimalist Chic</h5>
+                            <p class="text-muted mb-0">Clean lines, modern elegance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="modern">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&h=800&fit=crop" alt="Modern Wedding Dress 2" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Contemporary Romance</h5>
+                            <p class="text-muted mb-0">Flowing silhouette with modern details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="modern">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=800&fit=crop" alt="Modern Wedding Dress 3" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Boho Elegance</h5>
+                            <p class="text-muted mb-0">Relaxed yet refined</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vintage Collection -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="vintage">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=600&h=800&fit=crop" alt="Vintage Wedding Dress 1" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Vintage Glamour</h5>
+                            <p class="text-muted mb-0">1940s inspired elegance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="vintage">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=800&fit=crop" alt="Vintage Wedding Dress 2" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Retro Charm</h5>
+                            <p class="text-muted mb-0">1950s style with modern comfort</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="vintage">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=800&fit=crop" alt="Vintage Wedding Dress 3" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Art Deco Beauty</h5>
+                            <p class="text-muted mb-0">1920s inspired sophistication</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Collection -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="luxury">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&h=800&fit=crop" alt="Luxury Wedding Dress 1" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Couture Masterpiece</h5>
+                            <p class="text-muted mb-0">Hand-beaded luxury design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="luxury">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=800&fit=crop" alt="Luxury Wedding Dress 2" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Royal Elegance</h5>
+                            <p class="text-muted mb-0">Opulent design with intricate details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="luxury">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=600&h=800&fit=crop" alt="Luxury Wedding Dress 3" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Designer Exclusive</h5>
+                            <p class="text-muted mb-0">Limited edition couture piece</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="accessories">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=800&fit=crop" alt="Wedding Accessories 1" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Pearl Jewelry Set</h5>
+                            <p class="text-muted mb-0">Elegant pearl accessories</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="accessories">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=600&h=800&fit=crop" alt="Wedding Accessories 2" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Bridal Shoes</h5>
+                            <p class="text-muted mb-0">Comfortable yet elegant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="accessories">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=800&fit=crop" alt="Wedding Accessories 3" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Bridal Belt</h5>
+                            <p class="text-muted mb-0">Sparkling crystal belt</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veils -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="veils">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=800&fit=crop" alt="Wedding Veil 1" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Classic Cathedral Veil</h5>
+                            <p class="text-muted mb-0">Dramatic and elegant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="veils">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&h=800&fit=crop" alt="Wedding Veil 2" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Blusher Veil</h5>
+                            <p class="text-muted mb-0">Traditional and romantic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="veils">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=800&fit=crop" alt="Wedding Veil 3" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&h=1600&fit=crop">
+                                    <i class="fas fa-search-plus me-2"></i>View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-info p-3">
+                            <h5>Fingertip Veil</h5>
+                            <p class="text-muted mb-0">Perfect length for any style</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="imageLightbox" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 text-center">
+                    <img src="" alt="Gallery Image" id="lightboxImage" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="mb-3">BrideMe</h4>
+                    <p>Your destination for the perfect wedding dress. We're here to make your bridal dreams come true.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="gallery.html" class="text-white-50 text-decoration-none">Gallery</a></li>
+                        <li><a href="booking.html" class="text-white-50 text-decoration-none">Book Appointment</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-pinterest fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                    <p class="mt-3 mb-0 text-white-50">
+                        <i class="fas fa-phone me-2"></i>(555) 123-4567<br>
+                        <i class="fas fa-envelope me-2"></i>info@brideme.com
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-white-50">&copy; 2024 BrideMe. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
